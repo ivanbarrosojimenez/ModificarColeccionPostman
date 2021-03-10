@@ -48,7 +48,7 @@ public class ModificarPostMan {
             }
             // Grabar el objeto
             GrabarFichero grabarFichero = new GrabarFichero();
-            grabarFichero.crearFichero("M" + nombreFichero);
+            grabarFichero.crearFichero("M" + nombreFichero, true);
             grabarFichero.agregarAFichero(jsonObject.toJSONString());
             grabarFichero.cerrarFichero();
             sfRespuesta.append(jsonObject.toJSONString());
